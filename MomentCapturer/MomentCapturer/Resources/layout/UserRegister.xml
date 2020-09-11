@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/RegisterBackground">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/username"
+        android:hint="Въведете име на потребител..."
+        android:layout_margin="10dp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/password"
+        android:hint="Въведете парола..."
+        android:layout_below="@+id/username"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        />
+
+     <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/confirmPassword"
+        android:hint="Потвърдете паролата..."
+        android:layout_below="@+id/password"
+        android:inputType="textPassword"
+        android:layout_margin="10dp"
+        />
+    
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/btnRegister"
+       android:text="Регистрация"
+        android:background="@drawable/RegisterStyle"
+        android:layout_below="@+id/confirmPassword"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
+    
+
+

@@ -1,0 +1,49 @@
+﻿ 
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/LoginBackground"
+    android:id="@+id/layout"
+    >
+   
+   
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editUsername"
+        android:hint="Въведете потребител..."
+        android:layout_margin="10dp"
+        android:layout_centerInParent="true"
+    />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPassword"
+        android:inputType="textPassword"
+        android:layout_below="@+id/editUsername"
+        android:hint="Въведете парола..."
+        android:layout_margin="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnLogin"
+        android:layout_below="@+id/editPassword"
+        android:text="Влез"
+        android:background="@drawable/LoginStyle"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnRegister"
+        android:layout_below="@+id/btnLogin"
+        android:background="@drawable/RegisterStyle"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:text="Регистрация"/>
+
+   
+</RelativeLayout>

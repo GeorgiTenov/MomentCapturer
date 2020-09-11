@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/MomentBackground"
+    >
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editName"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:hint="Име"
+        />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPosition"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_below="@+id/editName"
+        android:hint="Роднина"
+        />
+
+      <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editDescription"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:padding="10dp"
+        android:layout_below="@+id/editPosition"
+        android:hint="Описание"
+        />
+    
+
+  <Refractored.Controls.CircleImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/capturedImg"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:layout_below="@+id/editDescription"/>
+     <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/captureBtn"
+        android:layout_margin="10dp"
+        android:layout_below="@+id/capturedImg"
+        android:background="@drawable/captureBtn"
+        android:text="Снимай"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/saveBtn"
+        android:layout_margin="10dp"
+        android:background="@drawable/btnSave"
+        android:layout_below="@id/captureBtn"
+        android:text="Запази"/>
+</RelativeLayout>
+
+   
